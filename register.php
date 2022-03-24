@@ -75,8 +75,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $param_username = $username;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
             echo "breakpoint1";
-            mysqli_stmt_execute($stmt);  
-            echo "statement executed";
+            // mysqli_stmt_execute($stmt);  
+            // echo "statement executed";
          // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to login page
